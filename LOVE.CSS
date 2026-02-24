@@ -1,0 +1,45 @@
+body{
+margin:0;
+background:black;
+overflow:hidden;
+color:white;
+font-family:sans-serif;
+}
+
+.title{
+position:absolute;
+top:40%;
+left:50%;
+transform:translate(-50%,-50%);
+font-size:60px;
+text-shadow:
+0 0 20px #ff0055,
+0 0 60px #ff0055;
+}
+
+.falling{
+position:fixed;
+top:-50px;
+font-size:26px;
+font-weight:bold;
+color:#ff6aa6;
+text-shadow:
+0 0 10px #ff2e88,
+0 0 30px #ff2e88,
+0 0 60px #ff2e88;
+animation:fall linear forwards;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh);
+opacity:0;
+}
+}
+
+#bg{
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
+}
